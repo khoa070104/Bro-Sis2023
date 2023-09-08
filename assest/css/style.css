@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+    --colorText1: #e23e3d;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+header .nav-pills .nav-link.active {
+    background-color: transparent !important;
+    color: var(--colorText1);
+}
+
+header .nav-item {
+    font-weight: 900;
+}
+/* ===== */
+.swiper {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sliderWarp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100% !important;
+}
+
+.sliderItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 93% !important;
+    background-color: palegoldenrod;
+}
+
+.slidebtn {
+    background: #ff1949;
+    padding: 30px;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+    height: 20px;
+    width: 20px;
+}
+/* === */
+.faq-main h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+.accordion {
+    padding-bottom: 8px;
+}
+.accordion-button {
+    font-weight: 700;
+    font-size: 18px;
+}
+/* == */
+.breadcrumb {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.breadcrumb .dotoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #081430;
+    opacity: 0.5;
+    background: #081430 url(../Images/dot-overlay.png) repeat;
+    z-index: -1;
+}
+
+.breadcrumb .boxContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb .boxContent .line1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb .boxContent .line1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb .boxContent .line1 a.active {
+    color: #e23e3d;
+}
+
+.breadcrumb .boxContent .breakLine {
+    height: 15px;
+    width: 2px;
+    background-color: #fff;
+}
+
+.breadcrumb .boxContent .title {
+    font-family: "BeVietnamPro", serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #e23e3d;
+}
+
+/* === */
+footer {
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+}
+footer::before {
+    content: "";
+    background: #181d20 url(../Images/backgroundimg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.white {
+    color: #fff !important;
+}
+
+footer h3 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+footer h3:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+}
+
+footer .footer-upper .footer-links ul li {
+    margin-bottom: 20px;
+    color: #fff;
+    display: block;
+}
+
+footer .footer-upper .footer-links ul li a {
+    transition: all ease-in-out 0.2s;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-upper .footer-links ul li a:hover {
+    color: #e23e3d;
+}
+
+
+footer .footer-copyright {
+    background: #fbfbfb12;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===phong ban */
+.myCard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.myCard_content {
+    width: 350px;
+    transition: all 0.3s ease;
+}
+
+.myCard_content:hover {
+    transform: scale(1.05);
+}
+
+.myCard_content .myCard_img {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+}
+
+.myCard_content .myCard_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.myCard_content .myCard_label {
+    font-weight: 600;
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+}
+ 
+.myCard_content .myCard_button {
+    display: block;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: #fff;
+    background-color: #ff1949;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    width: 130px;
+}
+
+.tab {
+    padding: 20px 16px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    gap: 18px;
+    color: #777;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #e23e3d;
+}
+
+.tab .icon {
+    width: 50px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.tab .label {
+    transform: translateY(5px);
+    font-weight: 700;
+    
+}
+
+.boxContentTab .heading {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.boxContentTab .desc {
+    margin-bottom: 8px;
+
+}
+.boxContentTab .desc a {
+    text-decoration: none;
+}
+
+/* === */
+.sliderItem .boxContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-image: linear-gradient( 180deg, #fff 50%,#ff1949 50% );;
+}
+
+.sliderItem .boxContent .leftside {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.sliderItem .boxContent .leftside .subContent {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: #FFF;
+    padding: 40px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #cccccc57;
+    transition: all 0.3s ease;
+}
+
+.subContent .line1 a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 48px;
+    transition: all 0.4s ease;
+}
+
+.subContent .line1 a:hover {
+    color: #e23e3d;
+}
+
+.sliderItem .boxContent .leftside .imgbg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subContent .line2 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subContent .line2 .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subContent .line2 .author .avt {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.subContent .line2 .author .name {
+    font-weight: 500;
+    font-size: 16px;
+    transform: translateY(5px);
+}
+
+.subContent .line2 .reactBox {
+    display: flex;
+    gap: 10px;
+}
+
+.subContent .line2 .reactItem{
+    display: flex;
+    gap: 5px;
+}
+/* ===phongban== */
+.phongban .heading {
+    color: #081430;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.phongban .heading strong {
+    color: #e23e3d;
+}
+
+.phongban .mysilder .item {
+    position: relative;
+    width: 343px;
+    height: 310px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.phongban .mysilder .item::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #d2113933;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.phongban .mysilder .item:hover::before {
+    width: 200%;
+    height: 200%;
+    background-color: #e23e3d;
+}
+
+.phongban .mysilder {
+    display: flex;
+    height: auto !important;
+}
+
+.phongban .mysilder .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.phongban .mysilder .item .subText {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #081430;
+    font-weight: 800;
+}
+
+.phongban .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.phongban .swiper-button-prev.swiper-button-disabled, 
+.phongban .swiper-button-next.swiper-button-disabled {
+    pointer-events: all !important;
+}
+/* =====responsive==== */
+@media screen and (max-width: 1024px){
+    .sliderItem .boxContent .leftside {
+        width: 70%;
+    }
+    .sliderItem .boxContent .leftside .subContent {
+        left: 44%;
+    }
+}
+@media screen and (max-width: 768px){
+    .sliderItem .boxContent .leftside {
+        width: 100%;
+    }
+    .sliderItem .boxContent .leftside .subContent {
+        width: 92%;
+        left: 4%;
+        top: 70%;
+        padding: 10px;
+    }
+    .subContent .line1 a {
+        font-size: 30px;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    .breadcrumb .boxContent {
+        align-items: center;
+    }
+
+    #v-pills-tab {
+        display: none;
+    }
+}
+@media screen and (max-width: 520px){
+    .swiper1{
+        height: 400px;
+    }
+    .subContent .line1 a {
+        font-size: 18px;
+    }
+    .sliderItem .boxContent {
+        padding: 20px;
+    }
+    .slidebtn {
+        transform: scale(0.6);
+    }
+    .sliderItem .boxContent .leftside .subContent {
+        width: 86%;
+        left: 7%;
+        top: 64%;
+        padding: 10px;
+    }
+}
+
